@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FooterComponent } from './footer.component';
+import { BearMatModule } from '../../bear-mat.module';
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
@@ -8,6 +8,7 @@ describe('FooterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ BearMatModule],
       declarations: [ FooterComponent ]
     })
     .compileComponents();

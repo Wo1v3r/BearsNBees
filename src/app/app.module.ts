@@ -7,6 +7,9 @@ import { HttpModule } from '@angular/http';
 //Angular Flex Layout Modules
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+//Angular Material Custom Module
+import { BearMatModule } from './bear-mat.module';
+
 //Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -22,7 +25,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    BearMatModule
   ],
   providers: [],
   bootstrap: [AppComponent]

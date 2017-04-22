@@ -1,2 +1,20 @@
-<h3>Bears & Bees </h3>
-<!--Nav should go here-->
+<!--<md-toolbar color="primary">
+  <span> Bears & Bees </span>
+  <span class="fill-remaining-space"></span>
+  <span> Nav goes here </span>
+</md-toolbar>-->
+
+
+<md-toolbar color="primary">
+  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
+    <div fxFlex id="bnb" class="header-item">
+      <span>@</span>
+      <span>Bears & Bees </span>
+    </div>
+    <div fxFlex fxLayout="row" id="actions" class="header-item">
+      <a fxFlex md-button routerLink="link">Sign up</a>
+      <a fxFlex md-button routerLink="link">Login</a>
+      <a fxFlex md-button routerLink="link">HoneyPots</a>
+    </div>
+  </div>
+</md-toolbar>

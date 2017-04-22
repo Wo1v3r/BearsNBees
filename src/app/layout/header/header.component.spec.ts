@@ -1,13 +1,13 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HeaderComponent } from './header.component';
-
+import { BearMatModule } from '../../bear-mat.module';
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ BearMatModule ],
       declarations: [ HeaderComponent ]
     })
     .compileComponents();

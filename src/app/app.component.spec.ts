@@ -4,9 +4,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
+import { BearMatModule } from './bear-mat.module';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ BearMatModule ],
       declarations: [
         AppComponent,
         HeaderComponent,
