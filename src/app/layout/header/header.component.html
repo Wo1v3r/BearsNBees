@@ -8,13 +8,23 @@
 <md-toolbar color="primary">
   <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
     <div fxFlex id="bnb" class="header-item">
-      <span>@</span>
+      <a routerLink="" ><img [src]="logoUrl"></a>
       <span>Bears & Bees </span>
     </div>
-    <div fxFlex fxLayout="row" id="actions" class="header-item">
-      <a fxFlex md-button routerLink="link">Sign up</a>
-      <a fxFlex md-button routerLink="link">Login</a>
-      <a fxFlex md-button routerLink="link">HoneyPots</a>
+    <div fxFlex fxLayout="row" fxLayoutAlign="end" id="actions" class="header-item">
+
+      <!--Navigation-->
+      <a class="btn" *ngIf="loggedIn" color="accent" fxFlex md-raised-button routerLink="bear">My Bear</a>
+      <a class="btn" color="accent" fxFlex md-raised-button routerLink="honeypots">HoneyPots</a>
+
+      <!--Login\Logout : TODO Change to normal buttons-->
+      <button class="btn" *ngIf="!loggedIn"
+      (click)="login()"
+      color="accent" fxFlex md-raised-button routerLink="">Login</button>
+      <button class="btn" *ngIf="loggedIn"
+      (click)="logout()"
+      color="accent" fxFlex md-raised-button routerLink="">Logout</button>
+
     </div>
   </div>
 </md-toolbar>

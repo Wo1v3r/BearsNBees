@@ -4,8 +4,19 @@
 
 .container{
     width:100%;
+    cursor:default;
 }
 
 .header-item{
     width:50%;
+}
+
+md-toolbar{
+    padding-right:5px;
+}
+
+.btn{
+    max-width:15%;
+    margin-left:5%;
+    padding:0.1%;
 }
