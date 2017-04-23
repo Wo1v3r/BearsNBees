@@ -1,0 +1,14 @@
+<!--<div fxLayout="row" fxLayoutAlign="space-around"
+[attr.color]="footerColor">
+    <div class="footer-social">Social Content</div>
+    <div class="footer-logo">Logo Content</div>
+    <div class="footer-info">Info Content</div>
+</div>-->
+
+<md-toolbar [color]="footerColor">
+    <div class="container" fxLayout="row">
+        <div fxHide fxShow.gt-sm="true" fxFlex id="social" class="footer-item">Social Content</div>
+        <div routerLink="about" fxFlex id="logo" class="footer-item">Logo Content</div>
+        <div fxHide fxShow.gt-sm="true" fxFlex id="info" class="footer-item">Info Content</div>
+    </div>
+</md-toolbar>

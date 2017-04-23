@@ -1,0 +1,12 @@
+.container{
+    width:100%;
+    cursor:default;
+}
+
+.footer-item{
+    text-align:center;
+}
+
+#logo:hover{
+    cursor:pointer;
+}

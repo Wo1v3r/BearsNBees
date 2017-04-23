@@ -1,0 +1,35 @@
+#blackBackground{
+    
+  position:absolute;
+  z-index:-10;
+  width:400px;
+  height:400px;
+  margin-top:100px;
+  background-color:#303030;
+
+}
+
+
+#notFoundImage{
+    cursor:pointer;
+    margin:50px;
+    width:300px;
+    height:300px;
+}
+
+#textNotFound{
+    margin-top:5%;
+    padding-left:5%;
+    margin-right:5%;
+}
+#textNotFound h1{
+    font-size: 4em;
+}
+#textNotFound p {
+    margin-top: 20px;
+    font-size:1.2em;
+}
+
+#seperator{
+    width:5%;
+}

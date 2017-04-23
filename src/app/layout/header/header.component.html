@@ -1,0 +1,30 @@
+<!--<md-toolbar color="primary">
+  <span> Bears & Bees </span>
+  <span class="fill-remaining-space"></span>
+  <span> Nav goes here </span>
+</md-toolbar>-->
+
+
+<md-toolbar color="primary">
+  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
+    <div fxFlex id="bnb" class="header-item">
+      <a routerLink="" ><img [src]="logoUrl"></a>
+      <span>Bears & Bees </span>
+    </div>
+    <div fxFlex fxLayout="row" fxLayoutAlign="end" id="actions" class="header-item">
+
+      <!--Navigation-->
+      <a class="btn" *ngIf="loggedIn" color="accent" fxFlex md-raised-button routerLink="bear">My Bear</a>
+      <a class="btn" color="accent" fxFlex md-raised-button routerLink="honeypots">HoneyPots</a>
+
+      <!--Login\Logout : TODO Change to normal buttons-->
+      <button class="btn" *ngIf="!loggedIn"
+      (click)="login()"
+      color="accent" fxFlex md-raised-button routerLink="">Login</button>
+      <button class="btn" *ngIf="loggedIn"
+      (click)="logout()"
+      color="accent" fxFlex md-raised-button routerLink="">Logout</button>
+
+    </div>
+  </div>
+</md-toolbar>
