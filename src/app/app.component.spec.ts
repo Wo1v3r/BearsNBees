@@ -12,7 +12,7 @@ import { BeesComponent } from './views/bees/bees.component';
 import { HoneypotComponent } from './views/honeypot/honeypot.component';
 import { BearComponent } from './views/bear/bear.component';
 import { NotfoundComponent } from './views/notfound/notfound.component';
-
+import { HoneypotDetailComponent } from './shared/honeypot-detail/honeypot-detail.component';
 //Modules
 import { BearMatModule } from './bear-mat/bear-mat.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -33,7 +33,8 @@ describe('AppComponent', () => {
     BeesComponent,
     HoneypotComponent,
     BearComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    HoneypotDetailComponent
   ],
   imports: [
     AppRoutingModule,

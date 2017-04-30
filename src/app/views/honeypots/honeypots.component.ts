@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HoneypotDetailComponent } from '../../shared/honeypot-detail/honeypot-detail.component';
 
 @Component({
   selector: 'app-honeypots',

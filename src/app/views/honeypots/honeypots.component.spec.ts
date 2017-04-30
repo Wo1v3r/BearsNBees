@@ -4,15 +4,24 @@ import { HoneypotsComponent } from './honeypots.component';
 import { HoneypotDetailComponent } from '../../shared/honeypot-detail/honeypot-detail.component';
 
 
+import { MdCardModule } from '@angular/material';
+
 describe('HoneypotsComponent', () => {
   let component: HoneypotsComponent;
   let fixture: ComponentFixture<HoneypotsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HoneypotsComponent ]
+      declarations: [
+        HoneypotsComponent,
+        HoneypotDetailComponent
+      ],
+      imports: [
+        MdCardModule
+      ]
+
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -3,6 +3,10 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HoneypotDetailComponent } from './honeypot-detail.component';
 import { MdCardModule } from '@angular/material';
 
+
+import { Tech } from '../data/tech';
+
+
 describe('HoneypotDetailComponent', () => {
   let component: HoneypotDetailComponent;
   let fixture: ComponentFixture<HoneypotDetailComponent>;

@@ -1,19 +1,16 @@
 <md-card>
   <md-card-header>
     <img md-card-avatar src="https://dummyimage.com/200x250/FFC55C/efe.png&text=H">
-    <md-card-title>HoneyPot Name</md-card-title>
-    <md-card-subtitle>HoneyPot Type</md-card-subtitle>
+    <md-card-title>{{name}}</md-card-title>
+    <md-card-subtitle>{{type}}</md-card-subtitle>
   </md-card-header>
+
   <md-card-content>
     <h4>Description</h4>
     <p>
-    Hell of salvia tousled hashtag ugh locavore synth, 
-    shoreditch leggings glossier humblebrag retro brunch meh listicle.
+      {{description}}
     </p>
     <h4>Stack</h4>
-    <img md-card-avatar src="https://dummyimage.com/200x250/A6ED8E/efe.png&text=M">
-    <img md-card-avatar src="https://dummyimage.com/200x250/FF8426/efe.png&text=E">
-    <img md-card-avatar src="https://dummyimage.com/200x250/E41655/efe.png&text=A">
-    <img md-card-avatar src="https://dummyimage.com/200x250/127C56/efe.png&text=N">
-    </md-card-content>
+    <img class="tech" *ngFor="let tech of techs" md-card-avatar src="{{tech.picture}}">
+  </md-card-content>
 </md-card>
