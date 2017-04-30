@@ -14,6 +14,7 @@ export class HoneypotDetailComponent implements OnInit {
   description: string = `Hell of salvia tousled hashtag ugh locavore synth, 
     shoreditch leggings glossier humblebrag retro brunch meh listicle.`;
   techs: Tech[] = TECHS;
+  views:number = 55;
 
   
   constructor() { }
