@@ -25,6 +25,7 @@ import { BeesComponent } from './views/bees/bees.component';
 import { HoneypotComponent } from './views/honeypot/honeypot.component';
 import { BearComponent } from './views/bear/bear.component';
 import { NotfoundComponent } from './views/notfound/notfound.component';
+import { HoneypotDetailComponent } from './shared/honeypot-detail/honeypot-detail.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { NotfoundComponent } from './views/notfound/notfound.component';
     BeesComponent,
     HoneypotComponent,
     BearComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    HoneypotDetailComponent
   ],
   imports: [
     BrowserModule,

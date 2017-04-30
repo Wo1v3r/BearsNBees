@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HoneypotsComponent } from './honeypots.component';
+import { HoneypotDetailComponent } from '../../shared/honeypot-detail/honeypot-detail.component';
+
 
 describe('HoneypotsComponent', () => {
   let component: HoneypotsComponent;
