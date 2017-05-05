@@ -9,8 +9,6 @@ Depicting Bears as newcomers to a stack\idea, a Honey Pot as their Project, the 
 Moreover, the application should be generally used to quickly find ideas for a side project you want to start right away.
 
 
-*Disclaimer:
-Bears and Bess is NOT a replacement for development and collaboration environment such as GitHub vice versa, it endorses the use of GitHub and its' counterparts.*
 
 
 ## Current Status of Bear and Bees
