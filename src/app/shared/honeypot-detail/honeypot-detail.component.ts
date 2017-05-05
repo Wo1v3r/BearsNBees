@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Tech } from '../data/tech';
 
-import { TECHS } from '../data/tech-mock';
+import { HoneyPot } from '../data/honeypot';
+import { HONEYPOT } from '../data/honeypot-mock';
+
 
 @Component({
   selector: 'app-honeypot-detail',
@@ -9,13 +10,8 @@ import { TECHS } from '../data/tech-mock';
   styleUrls: ['./honeypot-detail.component.css']
 })
 export class HoneypotDetailComponent implements OnInit {
-  name: string = "HoneyPot Name";
-  type: string = "HoneyPot Type";
-  description: string = `Hell of salvia tousled hashtag ugh locavore synth, 
-    shoreditch leggings glossier humblebrag retro brunch meh listicle.`;
-  techs: Tech[] = TECHS;
-  views:number = 55;
 
+  honeypot: HoneyPot = HONEYPOT;
   
   constructor() { }
 

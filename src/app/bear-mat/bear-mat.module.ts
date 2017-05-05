@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 // import { CommonModule } from '@angular/common';
-import { 
+import {
   MdToolbarModule,
   MdButtonModule,
-  MdCardModule
- } from '@angular/material';
+  MdCardModule,
+} from '@angular/material';
 
 
 @NgModule({
@@ -12,13 +12,15 @@ import {
     // CommonModule
     MdToolbarModule,
     MdButtonModule,
-    MdCardModule
+    MdCardModule,
+
   ],
   exports: [
     MdToolbarModule,
     MdButtonModule,
-    MdCardModule
+    MdCardModule,
+
   ]
-  
+
 })
 export class BearMatModule { }

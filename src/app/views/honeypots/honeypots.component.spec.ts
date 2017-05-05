@@ -4,7 +4,10 @@ import { HoneypotsComponent } from './honeypots.component';
 import { HoneypotDetailComponent } from '../../shared/honeypot-detail/honeypot-detail.component';
 
 
-import { MdCardModule } from '@angular/material';
+import {
+  MdCardModule,
+  MdToolbarModule
+} from '@angular/material';
 
 describe('HoneypotsComponent', () => {
   let component: HoneypotsComponent;
@@ -17,7 +20,9 @@ describe('HoneypotsComponent', () => {
         HoneypotDetailComponent
       ],
       imports: [
-        MdCardModule
+        MdCardModule,
+        MdToolbarModule
+
       ]
 
     })

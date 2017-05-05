@@ -8,9 +8,18 @@ import { HoneypotDetailComponent } from '../../shared/honeypot-detail/honeypot-d
 })
 export class HoneypotsComponent implements OnInit {
 
-  constructor() { }
+  numbers: number[];
+  constructor() { 
+  ///Temporary:
+
+        this.numbers = Array(9).map((x, i) => i); 
+
+  }
 
   ngOnInit() {
+
   }
+
+
 
 }

@@ -1,1 +1,34 @@
-<app-honeypot-detail></app-honeypot-detail>
+<div class="honeypotsHeader" fxLayout="row" fxLayoutAlign="space-around center">
+    <h1 fxFlex> HoneyPots</h1>
+    <p fxFlex fxHide="true" fxShow.gt-md>Lyft ex blue bottle, live-edge ad viral farm-to-table copper mug magna cray. Vegan la croix consequat sriracha yr, slow-carb
+        hexagon eu austin. Schlitz poke pinterest squid meh. Austin heirloom snackwave, street art tumeric lyft veniam aliqua
+        fingerstache woke subway tile art party. Small batch flexitarian mustache dolor semiotics. Aliquip freegan narwhal,
+        sriracha beard bushwick tote bag pitchfork YOLO.</p>
+
+
+</div>
+
+
+<div class="honeyPotsImageWrapper" fxLayout="row" fxLayoutAlign="space-around center">
+    <img fxFlex="1 1 auto" src="https://dummyimage.com/500x80/303030/efe.png&text=Honey pots..........">
+
+</div>
+
+<div class="honeyPotsToolBar">
+    <md-toolbar color="accent">
+
+        <button md-button>Recent</button>
+        <button md-button>Most Views</button>
+        <button md-button>My Skills</button>
+        <button md-button>Contributed to</button>
+        <div fxFlex class="seperator"></div>
+        <button md-button>Search</button>
+
+    </md-toolbar>
+
+</div>
+<div class="honeypotsContainer" fxLayout="column" fxLayout.gt-sm="row" fxLayoutWrap="">
+    <div class="honeypotDetail" fxFlex *ngFor="let number of numbers">
+        <app-honeypot-detail></app-honeypot-detail>
+    </div>
+</div>
